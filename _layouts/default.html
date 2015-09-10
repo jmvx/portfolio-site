@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <title>Sarah Van Cleve</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- page header -->
+      <div id="header">
+        <div id="site-name">{{ site.name }}</div>
+      </div>
+      <!-- page content -->
+      <div id="content">
+          {% if page.featured %}
+          <!-- featured content -->
+          <div id="featured">
+            Featured Content
+          </div>
+          {% endif %}
+          <!-- main content -->
+          <div id="main">
+              {{ content }}
+          </div>
+      </div>
+      <div id="footer">
+        Footer
+      </div>
+    </div>
+  </body>
+</html>
