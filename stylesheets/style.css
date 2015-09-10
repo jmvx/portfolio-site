@@ -1,4 +1,41 @@
-body {
-  background-color: red; }
+/* media breakpoints */
+/* colors */
+#container {
+  border: 1px solid green;
+  width: 800px;
+  margin: 0px auto; }
+
+#header {
+  border-bottom: 1px solid #ededed;
+  padding: 20px 0px;
+  margin-bottom: 20px; }
+  #header #title {
+    font-size: 50pt;
+    text-align: center; }
+
+#content .gallery-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
+  width: 197px;
+  height: 196px;
+  background-color: red;
+  overflow: hidden; }
+  #content .gallery-item img {
+    width: 100%; }
+  #content .gallery-item .caption {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+    #content .gallery-item .caption:hover {
+      background: rgba(200, 54, 54, 0.5); }
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: green; } }
+@media only screen and (max-width: 568px) {
+  body {
+    background-color: yellow; } }
 
 /*# sourceMappingURL=style.css.map */

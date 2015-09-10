@@ -1,3 +1,59 @@
-body {
-  background-color:red;
+/* media breakpoints */
+$phone: 568px;
+$content: 800px;
+$transparent: rgba(200, 54, 54, 0.5);
+
+/* colors */
+$lightgray: #ededed;
+
+#container {
+  border:1px solid green;
+  width:800px;
+  margin: 0px auto;
+}
+
+#header {
+  border-bottom:1px solid $lightgray;
+  padding:20px 0px;
+  margin-bottom:20px;
+  #title {
+    font-size:50pt;
+    text-align:center;
+  }
+}
+
+#content {  
+  .gallery-item {
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom: 5px;
+    width:197px;
+    height:196px;
+    background-color:red;
+    overflow:hidden;
+    img {
+      width:100%;
+    }
+    .caption {
+      position:absolute;
+      height:100%;
+      width:100%;
+      &:hover {
+        background: $transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $content) {
+  body {
+    background-color:green;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  body {
+    background-color:yellow;
+  }
 }

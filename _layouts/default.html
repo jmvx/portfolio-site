@@ -6,14 +6,16 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/style.css" />
     <title>Sarah Van Cleve</title>
   </head>
   <body>
     <div id="container">
       <!-- page header -->
       <div id="header">
-        <div id="site-name">{{ site.name }}</div>
+        <div id="title">
+          {{ site.name }}
+        </div>
       </div>
       <!-- page content -->
       <div id="content">
@@ -28,6 +30,7 @@
               {{ content }}
           </div>
       </div>
+      <!-- page footer -->
       <div id="footer">
         Footer
       </div>

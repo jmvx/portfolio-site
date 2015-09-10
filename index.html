@@ -1,6 +1,15 @@
 ---
 layout: default
-description: Ryan Z. Govostes
+description: Sarah Van Cleve
 ---
-
-This is some example content
+{% for gallery in site.data.illustrations %}
+<h1 class="gallery-title">{{ gallery.id }}</h1>
+<h2 class="gallery-subtitle">{{ gallery.description }}</h2>
+  {% for image in gallery.images %}
+  <div class="gallery-item">
+    <span class="caption">{{ image.caption }}</span>
+    <img src="{{ site.baseurl }}/{{ gallery.folder }}/{{ image.url }}" alt="{{ image.caption }}" />
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
