@@ -7,16 +7,17 @@
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <title>Sarah Van Cleve</title>
   </head>
   <body>
-    <div id="container">
-      <!-- page header -->
-      <div id="header">
-        <div id="title">
-          {{ site.name }}
-        </div>
+    <!-- page header -->
+    <div id="header">
+      <div id="title">
+        {{ site.name }}
       </div>
+    </div>
+    <div id="container">
       <!-- page content -->
       <div id="content">
           {% if page.featured %}
@@ -30,10 +31,10 @@
               {{ content }}
           </div>
       </div>
-      <!-- page footer -->
-      <div id="footer">
-        Footer
-      </div>
+    </div>
+    <!-- page footer -->
+    <div id="footer">
+      Footer
     </div>
   </body>
 </html>

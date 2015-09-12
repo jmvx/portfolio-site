@@ -1,13 +1,19 @@
 /* media breakpoints */
 $phone: 568px;
 $content: 800px;
-$transparent: rgba(200, 54, 54, 0.5);
+$transparent-black: rgba(0, 0, 0, 0.5);
+$cursive-font: 'Special Elite', cursive;
+$sans-serif-font: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 
 /* colors */
 $lightgray: #ededed;
 
+body {
+  font-family: $sans-serif-font;
+  text-align:center;
+}
+
 #container {
-  border:1px solid green;
   width:800px;
   margin: 0px auto;
 }
@@ -16,34 +22,53 @@ $lightgray: #ededed;
   border-bottom:1px solid $lightgray;
   padding:20px 0px;
   margin-bottom:20px;
+
   #title {
-    font-size:50pt;
+    font-size:75pt;
     text-align:center;
+    font-family: $cursive-font;
   }
 }
 
-#content {  
+#content {
   .gallery-item {
     position:relative;
     display:inline-block;
     vertical-align:top;
     margin-bottom: 5px;
-    width:197px;
-    height:196px;
-    background-color:red;
+    height:195px; width:195px;
     overflow:hidden;
+    
+    &:focus {
+      height:100%;
+      width:50%;
+      outline:0;
+      transition: width 0.5s linear, height 0.5s linear;
+    }
+    
     img {
       width:100%;
     }
+
     .caption {
       position:absolute;
-      height:100%;
-      width:100%;
+      font-weight:bold;
+      width:100%; height:100%;
+      color:transparent;
+      transition: background 0.3s linear;
+
       &:hover {
-        background: $transparent;
+        background: $transparent-black;
+        color:white;
       }
     }
   }
+}
+
+#footer {
+  border-top:1px solid $lightgray;
+  margin-top:20px;
+  padding:20px 0px;
 }
 
 @media only screen and (max-width: $content) {

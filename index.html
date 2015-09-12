@@ -3,13 +3,15 @@ layout: default
 description: Sarah Van Cleve
 ---
 {% for gallery in site.data.illustrations %}
-<h1 class="gallery-title">{{ gallery.id }}</h1>
+<h1 class="gallery-title">{{ gallery.id | capitalize }}</h1>
 <h2 class="gallery-subtitle">{{ gallery.description }}</h2>
   {% for image in gallery.images %}
-  <div class="gallery-item">
-    <span class="caption">{{ image.caption }}</span>
-    <img src="{{ site.baseurl }}/{{ gallery.folder }}/{{ image.url }}" alt="{{ image.caption }}" />
-  </div>
+    <div class="gallery-item" tabindex="0">
+      <span class="caption">
+        <p>{{ image.caption }}</p>
+      </span>
+      <img src="{{ site.baseurl }}/{{ gallery.folder }}/{{ image.url }}" alt="{{ image.caption }}" />
+    </div>
   {% endfor %}
 </div>
 {% endfor %}
