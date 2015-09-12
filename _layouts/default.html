@@ -8,6 +8,7 @@
     {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <title>Sarah Van Cleve</title>
   </head>
   <body>
@@ -20,16 +21,7 @@
     <div id="container">
       <!-- page content -->
       <div id="content">
-          {% if page.featured %}
-          <!-- featured content -->
-          <div id="featured">
-            Featured Content
-          </div>
-          {% endif %}
-          <!-- main content -->
-          <div id="main">
-              {{ content }}
-          </div>
+        {{ content }}
       </div>
     </div>
     <!-- page footer -->

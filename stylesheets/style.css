@@ -1,7 +1,7 @@
 /* media breakpoints */
 /* colors */
 body {
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: "Poiret One", cursive, sans-serif;
   text-align: center; }
 
 #container {
@@ -32,6 +32,8 @@ body {
     transition: width 0.5s linear, height 0.5s linear; }
   #content .gallery-item img {
     width: 100%; }
+  #content .gallery-item .gallery-header {
+    border: 1px solid gray; }
   #content .gallery-item .caption {
     position: absolute;
     font-weight: bold;
@@ -50,7 +52,10 @@ body {
 
 @media only screen and (max-width: 800px) {
   body {
-    background-color: green; } }
+    background-color: green; }
+
+  #container {
+    width: 100%; } }
 @media only screen and (max-width: 568px) {
   body {
     background-color: yellow; } }

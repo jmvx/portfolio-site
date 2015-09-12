@@ -3,7 +3,7 @@ $phone: 568px;
 $content: 800px;
 $transparent-black: rgba(0, 0, 0, 0.5);
 $cursive-font: 'Special Elite', cursive;
-$sans-serif-font: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+$sans-serif-font: 'Poiret One', cursive, sans-serif;
 
 /* colors */
 $lightgray: #ededed;
@@ -49,6 +49,10 @@ body {
     img {
       width:100%;
     }
+    
+    .gallery-header {
+      border:1px solid gray;
+    }
 
     .caption {
       position:absolute;
@@ -74,6 +78,10 @@ body {
 @media only screen and (max-width: $content) {
   body {
     background-color:green;
+  }
+  
+  #container {
+    width:100%;
   }
 }
 
