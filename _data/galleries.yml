@@ -25,25 +25,17 @@
 
 - id: photos
   description: Some photos I took
-  folder: /images/illustrations
+  folder: /images/photos
   images:
-  - url: drawing1.jpg
-    caption: A face on a yellow background
-  - url: drawing2.jpg
-    caption: Doodles on a white background
-  - url: drawing3.jpg
-    caption: Fish on a blue background
-  - url: drawing4.jpg
-    caption: Round thing on white background
-  - url: drawing5.jpg
-    caption: Butterfly on yellow background
-  - url: drawing6.jpg
-    caption: Rose on pink background
-  - url: drawing7.jpg
-    caption: Flowers on green background
-  - url: drawing8.jpg
-    caption: Broken things on green background
-  - url: drawing9.jpg
-    caption: Fast flowery things on purple background
-  - url: drawing10.jpg
-    caption: Nuclear bomb photo on brown background
+  - url: photo1.jpg
+    caption: Liam sleeping
+  - url: photo2.jpg
+    caption: Playing the violin
+  - url: photo3.jpg
+    caption: A cool band
+  - url: photo4.jpg
+    caption: A dark alley
+  - url: photo5.jpg
+    caption: Mossy green
+  - url: photo6.jpg
+    caption: People painting

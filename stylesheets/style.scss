@@ -31,6 +31,12 @@ body {
 }
 
 #content {
+  .gallery-header {
+    border:1px solid $lightgray;
+    margin:20px 25px;
+    padding: 0px 20px;
+  }
+  
   .gallery-item {
     position:relative;
     display:inline-block;
@@ -43,15 +49,11 @@ body {
       height:100%;
       width:50%;
       outline:0;
-      transition: width 0.5s linear, height 0.5s linear;
+      transition: height 0.5s linear, width 0.5s linear;
     }
     
     img {
       width:100%;
-    }
-    
-    .gallery-header {
-      border:1px solid gray;
     }
 
     .caption {
@@ -76,17 +78,13 @@ body {
 }
 
 @media only screen and (max-width: $content) {
-  body {
-    background-color:green;
-  }
-  
   #container {
     width:100%;
   }
 }
 
 @media only screen and (max-width: $phone) {
-  body {
-    background-color:yellow;
+  .gallery-item:focus {
+    width:100% !important;
   }
 }

@@ -17,6 +17,10 @@ body {
     text-align: center;
     font-family: "Special Elite", cursive; }
 
+#content .gallery-header {
+  border: 1px solid #ededed;
+  margin: 20px 25px;
+  padding: 0px 20px; }
 #content .gallery-item {
   position: relative;
   display: inline-block;
@@ -29,11 +33,9 @@ body {
     height: 100%;
     width: 50%;
     outline: 0;
-    transition: width 0.5s linear, height 0.5s linear; }
+    transition: height 0.5s linear, width 0.5s linear; }
   #content .gallery-item img {
     width: 100%; }
-  #content .gallery-item .gallery-header {
-    border: 1px solid gray; }
   #content .gallery-item .caption {
     position: absolute;
     font-weight: bold;
@@ -51,13 +53,10 @@ body {
   padding: 20px 0px; }
 
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: green; }
-
   #container {
     width: 100%; } }
 @media only screen and (max-width: 568px) {
-  body {
-    background-color: yellow; } }
+  .gallery-item:focus {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
